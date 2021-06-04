@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Cyanide</title>
+        <link>https://kemingy.github.io</link>
+        <description></description>
+        <generator>Zola</generator>
+        <language>en</language>
+        <atom:link href="https://kemingy.github.io/categories/devops/rss.xml" rel="self" type="application/rss+xml"/>
+        <lastBuildDate>Wed, 12 Jun 2019 00:00:00 +0000</lastBuildDate>
+        
+            <item>
+                <title>Ansible tutorail for human</title>
+                <pubDate>Wed, 12 Jun 2019 00:00:00 +0000</pubDate>
+                <link>https://kemingy.github.io/blogs/ansible-tutorail-for-human/</link>
+                <guid>https://kemingy.github.io/blogs/ansible-tutorail-for-human/</guid>
+                <description>&lt;p&gt;We need documents for human, not for robots.&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+    </channel>
+</rss>

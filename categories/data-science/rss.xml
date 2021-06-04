@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Cyanide</title>
+        <link>https://kemingy.github.io</link>
+        <description></description>
+        <generator>Zola</generator>
+        <language>en</language>
+        <atom:link href="https://kemingy.github.io/categories/data-science/rss.xml" rel="self" type="application/rss+xml"/>
+        <lastBuildDate>Tue, 13 Apr 2021 00:00:00 +0000</lastBuildDate>
+        
+            <item>
+                <title>CI&#x2F;CD for data science</title>
+                <pubDate>Tue, 13 Apr 2021 00:00:00 +0000</pubDate>
+                <link>https://kemingy.github.io/blogs/cicd-for-data-science/</link>
+                <guid>https://kemingy.github.io/blogs/cicd-for-data-science/</guid>
+                <description>&lt;p&gt;Lots of people are talking about MLOps recently. Continuous Integration (CI) and Continuous Delivery&#x2F;Deployment (CD) are the basic requirements for MLOps. This post will focus on some details about CI&#x2F;CD for data science.&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>Deep Learning Serving Framework</title>
+                <pubDate>Wed, 13 May 2020 00:00:00 +0000</pubDate>
+                <link>https://kemingy.github.io/blogs/deep-learning-serving/</link>
+                <guid>https://kemingy.github.io/blogs/deep-learning-serving/</guid>
+                <description>&lt;p&gt;Yet another deep learning serving framework that is easy to use.&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>Deep Learning Serving Benchmark</title>
+                <pubDate>Wed, 22 Apr 2020 00:00:00 +0000</pubDate>
+                <link>https://kemingy.github.io/blogs/serving-benchmark/</link>
+                <guid>https://kemingy.github.io/blogs/serving-benchmark/</guid>
+                <description>&lt;p&gt;There is no black magic, everything follows the rules.&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+    </channel>
+</rss>

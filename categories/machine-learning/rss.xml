@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Cyanide</title>
+        <link>https://kemingy.github.io</link>
+        <description></description>
+        <generator>Zola</generator>
+        <language>en</language>
+        <atom:link href="https://kemingy.github.io/categories/machine-learning/rss.xml" rel="self" type="application/rss+xml"/>
+        <lastBuildDate>Fri, 24 Aug 2018 00:00:00 +0000</lastBuildDate>
+        
+            <item>
+                <title>文本分类</title>
+                <pubDate>Fri, 24 Aug 2018 00:00:00 +0000</pubDate>
+                <link>https://kemingy.github.io/blogs/wen-ben-fen-lei/</link>
+                <guid>https://kemingy.github.io/blogs/wen-ben-fen-lei/</guid>
+                <description>&lt;p&gt;文本分类是最经典的机器学习问题之一，像 anti-spam，情感分析，语义相似等，都是以文本分类为核心建立起来的。当我们能处理好文本分类问题的时候，往往都能很好解决这些问题。&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+    </channel>
+</rss>

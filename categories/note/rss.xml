@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Cyanide</title>
+        <link>https://kemingy.github.io</link>
+        <description></description>
+        <generator>Zola</generator>
+        <language>en</language>
+        <atom:link href="https://kemingy.github.io/categories/note/rss.xml" rel="self" type="application/rss+xml"/>
+        <lastBuildDate>Sun, 24 Feb 2019 00:00:00 +0000</lastBuildDate>
+        
+            <item>
+                <title>Note for Vimtutor</title>
+                <pubDate>Sun, 24 Feb 2019 00:00:00 +0000</pubDate>
+                <link>https://kemingy.github.io/blogs/vimtutor/</link>
+                <guid>https://kemingy.github.io/blogs/vimtutor/</guid>
+                <description>&lt;p&gt;Just type &lt;code&gt;vimtutor&lt;&#x2F;code&gt; in your terminal to learn the basic usage of Vim.&lt;&#x2F;p&gt;
+&lt;p&gt;Although I usually use VSCode for coding, sometimes you have to edit files in the server. Mastering the basic of Vim is necessary.&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>NLP with Deep Learning</title>
+                <pubDate>Fri, 05 Oct 2018 00:00:00 +0000</pubDate>
+                <link>https://kemingy.github.io/blogs/deeplearningnlp/</link>
+                <guid>https://kemingy.github.io/blogs/deeplearningnlp/</guid>
+                <description>&lt;p&gt;Notes of &lt;a href=&quot;http:&#x2F;&#x2F;web.stanford.edu&#x2F;class&#x2F;cs224n&#x2F;&quot;&gt;CS224n: Natural Language Processing with Deep Learning&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>Recommendation System Checklist</title>
+                <pubDate>Fri, 14 Sep 2018 00:00:00 +0000</pubDate>
+                <link>https://kemingy.github.io/blogs/recsys-checklist/</link>
+                <guid>https://kemingy.github.io/blogs/recsys-checklist/</guid>
+                <description>&lt;p&gt;Notes of &lt;a href=&quot;https:&#x2F;&#x2F;time.geekbang.org&#x2F;column&#x2F;74&quot;&gt;&amp;quot;36 strokes of recommended system&amp;quot;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>写个博客那么多事儿</title>
+                <pubDate>Tue, 07 Aug 2018 00:00:00 +0000</pubDate>
+                <link>https://kemingy.github.io/blogs/bo-ke-gong-ju/</link>
+                <guid>https://kemingy.github.io/blogs/bo-ke-gong-ju/</guid>
+                <description>&lt;p&gt;各种工具、平台、格式泛滥成灾，每个打算动手写博客的人都要在上面浪费不少时间。是否要自己搭建？该选什么主题？要买什么域名？鉴于我已经在上面浪费了不少时间，就简单总结一下吧。&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>项目文档管理</title>
+                <pubDate>Thu, 26 Jul 2018 00:00:00 +0000</pubDate>
+                <link>https://kemingy.github.io/blogs/xiang-mu-wen-dang-guan-li/</link>
+                <guid>https://kemingy.github.io/blogs/xiang-mu-wen-dang-guan-li/</guid>
+                <description>&lt;p&gt;没文档或者文档太烂的项目是可怕的，完善易懂的文档是一个好项目的标配。&lt;&#x2F;p&gt;
+&lt;p&gt;如何管理项目文档对于维护一个靠谱的项目是至关重要的。&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>T 型路线</title>
+                <pubDate>Wed, 20 Jun 2018 00:00:00 +0000</pubDate>
+                <link>https://kemingy.github.io/blogs/txing/</link>
+                <guid>https://kemingy.github.io/blogs/txing/</guid>
+                <description>&lt;p&gt;做一个 T 型人才，或者说博学且有专长，这类说法在很多地方都能看到，我印象中最深刻的是在 Valve 的员工手册中，大概是因为一直都期待能有一家企业回应这种说法吧。&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>Relevance: from TFIDF to BM25</title>
+                <pubDate>Mon, 12 Mar 2018 00:00:00 +0000</pubDate>
+                <link>https://kemingy.github.io/blogs/relevance-from-tfidf-to-bm25/</link>
+                <guid>https://kemingy.github.io/blogs/relevance-from-tfidf-to-bm25/</guid>
+                <description>&lt;p&gt;在信息检索系统中，TFIDF 和 BM25 函数都可以用来计算文档的相关度并进行排序。其中，TFIDF 也经常被用在自然语言处理中，BM25 则可以看做是 TFIDF 的进一步演化。在处理搜索字符串的时候，它们采用的都是 Bag-of-Word 方式，也就是说会忽略掉词的出现顺序，只考虑词出现与否和词频。&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>Python Package</title>
+                <pubDate>Sat, 10 Mar 2018 00:00:00 +0000</pubDate>
+                <link>https://kemingy.github.io/blogs/python-package/</link>
+                <guid>https://kemingy.github.io/blogs/python-package/</guid>
+                <description>&lt;p&gt;偶尔手痒了会撸一个 Python 的项目打包发布到 PyPI 上，方便以后安装使用。即使不是打算发布的，如果考虑把文档写在代码的注释里然后用 Sphinx 生成的，通常也是打包安装到本地，然后在一个地方集中生成文档，方便管理。&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>Flask 规范化</title>
+                <pubDate>Sun, 19 Nov 2017 00:00:00 +0000</pubDate>
+                <link>https://kemingy.github.io/blogs/flask-gui-fan-hua/</link>
+                <guid>https://kemingy.github.io/blogs/flask-gui-fan-hua/</guid>
+                <description>&lt;p&gt;说到 &lt;code&gt;Flask&lt;&#x2F;code&gt; ，这是我接触的第一个后端架构，也基本是目前唯一一个比较熟悉的。&lt;&#x2F;p&gt;
+&lt;p&gt;对于规范化，这当然是很有必要的，特别是你的项目越做越复杂，不断增加新功能的时候，就会发现如果一开始结构很差，基本就需要大规模重构了。而重构，又通常是说说而已，真正动手完全重构什么的是不存在的，这么丑的代码，就算是我自己写得，我也不想再看了。&lt;&#x2F;p&gt;
+&lt;p&gt;所以呢，一开始就尽可能做得规范一点，这样以后看起来就很舒服了，进行修改也会变得相对简单，别人要接手也不会看吐了。&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>Docker 常用命令</title>
+                <pubDate>Sat, 18 Nov 2017 00:00:00 +0000</pubDate>
+                <link>https://kemingy.github.io/blogs/docker-chang-yong-ming-ling/</link>
+                <guid>https://kemingy.github.io/blogs/docker-chang-yong-ming-ling/</guid>
+                <description>&lt;p&gt;Docker 这几年非常火，只不过对于我这种基本不接触业务的人而言，平时很少会用到 Docker，自己写项目愿意用 Python 的 &lt;code&gt;virtualenv&lt;&#x2F;code&gt; 就不错了。&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>Basic NLP Knowledge</title>
+                <pubDate>Thu, 11 Aug 2016 00:00:00 +0000</pubDate>
+                <link>https://kemingy.github.io/blogs/natural-language-processing-knowledge/</link>
+                <guid>https://kemingy.github.io/blogs/natural-language-processing-knowledge/</guid>
+                <description>&lt;p&gt;&lt;a href=&quot;http:&#x2F;&#x2F;web.stanford.edu&#x2F;%7Ejurafsky&#x2F;NLPCourseraSlides.html&quot;&gt;&lt;em&gt;Notes of Stanford NLP course&lt;&#x2F;em&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>变量命名规则</title>
+                <pubDate>Mon, 16 May 2016 00:00:00 +0000</pubDate>
+                <link>https://kemingy.github.io/blogs/variable-name/</link>
+                <guid>https://kemingy.github.io/blogs/variable-name/</guid>
+                <description>&lt;p&gt;原文：&lt;a href=&quot;http:&#x2F;&#x2F;a-nickels-worth.blogspot.com&#x2F;2016&#x2F;04&#x2F;a-guide-to-naming-variables.html?utm_source=wanqu.co&amp;amp;utm_campaign=Wanqu+Daily&amp;amp;utm_medium=email&quot;&gt;Variable name&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;本文翻译了该文章的大致意思，省略了代码示例。&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+    </channel>
+</rss>

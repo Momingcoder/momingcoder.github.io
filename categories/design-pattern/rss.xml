@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Cyanide</title>
+        <link>https://kemingy.github.io</link>
+        <description></description>
+        <generator>Zola</generator>
+        <language>en</language>
+        <atom:link href="https://kemingy.github.io/categories/design-pattern/rss.xml" rel="self" type="application/rss+xml"/>
+        <lastBuildDate>Sat, 08 Dec 2018 00:00:00 +0000</lastBuildDate>
+        
+            <item>
+                <title>填坑一个 Java 项目</title>
+                <pubDate>Sat, 08 Dec 2018 00:00:00 +0000</pubDate>
+                <link>https://kemingy.github.io/blogs/refactor-java-project/</link>
+                <guid>https://kemingy.github.io/blogs/refactor-java-project/</guid>
+                <description>&lt;p&gt;重构是不可能重构的，这辈子都不可能重构的……&lt;&#x2F;p&gt;
+&lt;p&gt;好吧，我自己写的垃圾代码我自己重构……&lt;&#x2F;p&gt;
+&lt;p&gt;什么！？你要我去修改别人的垃圾代码？！&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+    </channel>
+</rss>

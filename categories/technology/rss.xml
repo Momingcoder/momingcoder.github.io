@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Cyanide</title>
+        <link>https://kemingy.github.io</link>
+        <description></description>
+        <generator>Zola</generator>
+        <language>en</language>
+        <atom:link href="https://kemingy.github.io/categories/technology/rss.xml" rel="self" type="application/rss+xml"/>
+        <lastBuildDate>Tue, 13 Apr 2021 00:00:00 +0000</lastBuildDate>
+        
+            <item>
+                <title>CI&#x2F;CD for data science</title>
+                <pubDate>Tue, 13 Apr 2021 00:00:00 +0000</pubDate>
+                <link>https://kemingy.github.io/blogs/cicd-for-data-science/</link>
+                <guid>https://kemingy.github.io/blogs/cicd-for-data-science/</guid>
+                <description>&lt;p&gt;Lots of people are talking about MLOps recently. Continuous Integration (CI) and Continuous Delivery&#x2F;Deployment (CD) are the basic requirements for MLOps. This post will focus on some details about CI&#x2F;CD for data science.&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>Deep Learning Serving Framework</title>
+                <pubDate>Wed, 13 May 2020 00:00:00 +0000</pubDate>
+                <link>https://kemingy.github.io/blogs/deep-learning-serving/</link>
+                <guid>https://kemingy.github.io/blogs/deep-learning-serving/</guid>
+                <description>&lt;p&gt;Yet another deep learning serving framework that is easy to use.&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>Deep Learning Serving Benchmark</title>
+                <pubDate>Wed, 22 Apr 2020 00:00:00 +0000</pubDate>
+                <link>https://kemingy.github.io/blogs/serving-benchmark/</link>
+                <guid>https://kemingy.github.io/blogs/serving-benchmark/</guid>
+                <description>&lt;p&gt;There is no black magic, everything follows the rules.&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>Rate Limiter Implementation</title>
+                <pubDate>Thu, 20 Feb 2020 00:00:00 +0000</pubDate>
+                <link>https://kemingy.github.io/blogs/rate-limiter/</link>
+                <guid>https://kemingy.github.io/blogs/rate-limiter/</guid>
+                <description>&lt;p&gt;Rate limiter is used to constrain the request for a certain period, which can reduce the pressure of servers, prevent malicious attacks, offer more stable services.&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>Python Descriptor Short Note</title>
+                <pubDate>Thu, 16 Jan 2020 00:00:00 +0000</pubDate>
+                <link>https://kemingy.github.io/blogs/python-descriptor/</link>
+                <guid>https://kemingy.github.io/blogs/python-descriptor/</guid>
+                <description>&lt;p&gt;&lt;strong&gt;Define&lt;&#x2F;strong&gt;: a descriptor is an object attribute with &amp;quot;binding behavior&amp;quot;, one whose attribute access has been overridden by methods in the descriptor protocal.&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>SpecTree</title>
+                <pubDate>Tue, 07 Jan 2020 00:00:00 +0000</pubDate>
+                <link>https://kemingy.github.io/blogs/spectree/</link>
+                <guid>https://kemingy.github.io/blogs/spectree/</guid>
+                <description>&lt;p&gt;SpecTree: Yet another tool to generate OpenAPI document and validate request &amp;amp; response with Python annotations.&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>Kubernetes in action note</title>
+                <pubDate>Wed, 27 Nov 2019 00:00:00 +0000</pubDate>
+                <link>https://kemingy.github.io/blogs/k8s-in-action/</link>
+                <guid>https://kemingy.github.io/blogs/k8s-in-action/</guid>
+                <description>&lt;p&gt;k8s is really complex...&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>systemd command cheatsheet</title>
+                <pubDate>Fri, 27 Sep 2019 00:00:00 +0000</pubDate>
+                <link>https://kemingy.github.io/blogs/systemd/</link>
+                <guid>https://kemingy.github.io/blogs/systemd/</guid>
+                <description>&lt;p&gt;useful command for &lt;code&gt;systemd&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>写了两个 Python service API doc&amp;verify 工具</title>
+                <pubDate>Wed, 25 Sep 2019 00:00:00 +0000</pubDate>
+                <link>https://kemingy.github.io/blogs/apispec/</link>
+                <guid>https://kemingy.github.io/blogs/apispec/</guid>
+                <description>&lt;p&gt;最近在看一些 API 规范化的资料，鉴于没有很合适的，就自己写了两个 Python 的包，顺便记录下感想。&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>NGINX Cookbook note</title>
+                <pubDate>Sat, 27 Jul 2019 00:00:00 +0000</pubDate>
+                <link>https://kemingy.github.io/blogs/nginx/</link>
+                <guid>https://kemingy.github.io/blogs/nginx/</guid>
+                <description>&lt;p&gt;NGINX Plus looks great :)&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>Ansible tutorail for human</title>
+                <pubDate>Wed, 12 Jun 2019 00:00:00 +0000</pubDate>
+                <link>https://kemingy.github.io/blogs/ansible-tutorail-for-human/</link>
+                <guid>https://kemingy.github.io/blogs/ansible-tutorail-for-human/</guid>
+                <description>&lt;p&gt;We need documents for human, not for robots.&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>The worst practice for software engineering</title>
+                <pubDate>Wed, 13 Mar 2019 00:00:00 +0000</pubDate>
+                <link>https://kemingy.github.io/blogs/worst-practice/</link>
+                <guid>https://kemingy.github.io/blogs/worst-practice/</guid>
+                <description>&lt;p&gt;People will suffer a lot from bad design or bad code in software engineering. Today I&#x27;d like to share a number of the worst practices.&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>填坑一个 Java 项目</title>
+                <pubDate>Sat, 08 Dec 2018 00:00:00 +0000</pubDate>
+                <link>https://kemingy.github.io/blogs/refactor-java-project/</link>
+                <guid>https://kemingy.github.io/blogs/refactor-java-project/</guid>
+                <description>&lt;p&gt;重构是不可能重构的，这辈子都不可能重构的……&lt;&#x2F;p&gt;
+&lt;p&gt;好吧，我自己写的垃圾代码我自己重构……&lt;&#x2F;p&gt;
+&lt;p&gt;什么！？你要我去修改别人的垃圾代码？！&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>文本分类</title>
+                <pubDate>Fri, 24 Aug 2018 00:00:00 +0000</pubDate>
+                <link>https://kemingy.github.io/blogs/wen-ben-fen-lei/</link>
+                <guid>https://kemingy.github.io/blogs/wen-ben-fen-lei/</guid>
+                <description>&lt;p&gt;文本分类是最经典的机器学习问题之一，像 anti-spam，情感分析，语义相似等，都是以文本分类为核心建立起来的。当我们能处理好文本分类问题的时候，往往都能很好解决这些问题。&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>T 型路线</title>
+                <pubDate>Wed, 20 Jun 2018 00:00:00 +0000</pubDate>
+                <link>https://kemingy.github.io/blogs/txing/</link>
+                <guid>https://kemingy.github.io/blogs/txing/</guid>
+                <description>&lt;p&gt;做一个 T 型人才，或者说博学且有专长，这类说法在很多地方都能看到，我印象中最深刻的是在 Valve 的员工手册中，大概是因为一直都期待能有一家企业回应这种说法吧。&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>拼音输入法引擎</title>
+                <pubDate>Mon, 18 Jun 2018 00:00:00 +0000</pubDate>
+                <link>https://kemingy.github.io/blogs/pin-yin-shu-ru-fa-yin-qing/</link>
+                <guid>https://kemingy.github.io/blogs/pin-yin-shu-ru-fa-yin-qing/</guid>
+                <description>&lt;p&gt;最近在做 query rewriting 的时候，需要做一个拼音转中文的功能，做着做着，就差不多快做成一个拼音输入法引擎了。&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>拼写检查器</title>
+                <pubDate>Sun, 17 Jun 2018 00:00:00 +0000</pubDate>
+                <link>https://kemingy.github.io/blogs/rustpin-xie-jian-cha-qi/</link>
+                <guid>https://kemingy.github.io/blogs/rustpin-xie-jian-cha-qi/</guid>
+                <description>&lt;p&gt;跟拼写检查器还是有点渊源的。想当初做数学建模的时候，就遇到过一次类似的问题，于是去网上搜到 &lt;a href=&quot;http:&#x2F;&#x2F;norvig.com&#x2F;spell-correct.html&quot;&gt;Peter Norvig&lt;&#x2F;a&gt; 的教程，写的非常好，当时看到短短二十行代码就能很好解决这个问题，实在是惊艳。而我也是从那个时候开始学习 Python 的。当然，以我初学者的水平要想一时间完全看懂他的代码是不太可能的，不过还是能理解大体的流程，做了一定修改后留作自用。&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>Relevance: from TFIDF to BM25</title>
+                <pubDate>Mon, 12 Mar 2018 00:00:00 +0000</pubDate>
+                <link>https://kemingy.github.io/blogs/relevance-from-tfidf-to-bm25/</link>
+                <guid>https://kemingy.github.io/blogs/relevance-from-tfidf-to-bm25/</guid>
+                <description>&lt;p&gt;在信息检索系统中，TFIDF 和 BM25 函数都可以用来计算文档的相关度并进行排序。其中，TFIDF 也经常被用在自然语言处理中，BM25 则可以看做是 TFIDF 的进一步演化。在处理搜索字符串的时候，它们采用的都是 Bag-of-Word 方式，也就是说会忽略掉词的出现顺序，只考虑词出现与否和词频。&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>Python 编码</title>
+                <pubDate>Sat, 24 Feb 2018 00:00:00 +0000</pubDate>
+                <link>https://kemingy.github.io/blogs/python-bian-ma/</link>
+                <guid>https://kemingy.github.io/blogs/python-bian-ma/</guid>
+                <description>&lt;p&gt;毫不客气地说，编码真的是 Python 使用者遇到的最多的问题之一。新手看了会崩溃，老手遇到会流泪（感叹以前踩过的坑）。&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>Rust 略详细的介绍</title>
+                <pubDate>Fri, 22 Dec 2017 00:00:00 +0000</pubDate>
+                <link>https://kemingy.github.io/blogs/rust-lue-xiang-xi-de-jie-shao/</link>
+                <guid>https://kemingy.github.io/blogs/rust-lue-xiang-xi-de-jie-shao/</guid>
+                <description>&lt;p&gt;Rust 是一门编译型系统编程语言。官方给出的定义是：&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Rust&lt;&#x2F;strong&gt; is a systems programming language that runs blazingly fast, prevents segfaults, and guarantees thread safety.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;可以看出这是一门主打效率，安全和并发的语言。&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>Flask 规范化</title>
+                <pubDate>Sun, 19 Nov 2017 00:00:00 +0000</pubDate>
+                <link>https://kemingy.github.io/blogs/flask-gui-fan-hua/</link>
+                <guid>https://kemingy.github.io/blogs/flask-gui-fan-hua/</guid>
+                <description>&lt;p&gt;说到 &lt;code&gt;Flask&lt;&#x2F;code&gt; ，这是我接触的第一个后端架构，也基本是目前唯一一个比较熟悉的。&lt;&#x2F;p&gt;
+&lt;p&gt;对于规范化，这当然是很有必要的，特别是你的项目越做越复杂，不断增加新功能的时候，就会发现如果一开始结构很差，基本就需要大规模重构了。而重构，又通常是说说而已，真正动手完全重构什么的是不存在的，这么丑的代码，就算是我自己写得，我也不想再看了。&lt;&#x2F;p&gt;
+&lt;p&gt;所以呢，一开始就尽可能做得规范一点，这样以后看起来就很舒服了，进行修改也会变得相对简单，别人要接手也不会看吐了。&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>Docker 常用命令</title>
+                <pubDate>Sat, 18 Nov 2017 00:00:00 +0000</pubDate>
+                <link>https://kemingy.github.io/blogs/docker-chang-yong-ming-ling/</link>
+                <guid>https://kemingy.github.io/blogs/docker-chang-yong-ming-ling/</guid>
+                <description>&lt;p&gt;Docker 这几年非常火，只不过对于我这种基本不接触业务的人而言，平时很少会用到 Docker，自己写项目愿意用 Python 的 &lt;code&gt;virtualenv&lt;&#x2F;code&gt; 就不错了。&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>折腾各种工具</title>
+                <pubDate>Thu, 16 Nov 2017 00:00:00 +0000</pubDate>
+                <link>https://kemingy.github.io/blogs/zhe-teng-ge-chong-gong-ju/</link>
+                <guid>https://kemingy.github.io/blogs/zhe-teng-ge-chong-gong-ju/</guid>
+                <description>&lt;p&gt;俗话说的好，技术水平不重要，重要的是折腾各种工具的过程。: )&lt;&#x2F;p&gt;
+&lt;p&gt;那么，就来总结一下自己觉得还不错的工具吧。&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>变量命名规则</title>
+                <pubDate>Mon, 16 May 2016 00:00:00 +0000</pubDate>
+                <link>https://kemingy.github.io/blogs/variable-name/</link>
+                <guid>https://kemingy.github.io/blogs/variable-name/</guid>
+                <description>&lt;p&gt;原文：&lt;a href=&quot;http:&#x2F;&#x2F;a-nickels-worth.blogspot.com&#x2F;2016&#x2F;04&#x2F;a-guide-to-naming-variables.html?utm_source=wanqu.co&amp;amp;utm_campaign=Wanqu+Daily&amp;amp;utm_medium=email&quot;&gt;Variable name&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;本文翻译了该文章的大致意思，省略了代码示例。&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+    </channel>
+</rss>

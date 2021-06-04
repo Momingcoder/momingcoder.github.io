@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Cyanide</title>
+        <link>https://kemingy.github.io</link>
+        <description></description>
+        <generator>Zola</generator>
+        <language>en</language>
+        <atom:link href="https://kemingy.github.io/categories/programming-language/rss.xml" rel="self" type="application/rss+xml"/>
+        <lastBuildDate>Sat, 08 Dec 2018 00:00:00 +0000</lastBuildDate>
+        
+            <item>
+                <title>填坑一个 Java 项目</title>
+                <pubDate>Sat, 08 Dec 2018 00:00:00 +0000</pubDate>
+                <link>https://kemingy.github.io/blogs/refactor-java-project/</link>
+                <guid>https://kemingy.github.io/blogs/refactor-java-project/</guid>
+                <description>&lt;p&gt;重构是不可能重构的，这辈子都不可能重构的……&lt;&#x2F;p&gt;
+&lt;p&gt;好吧，我自己写的垃圾代码我自己重构……&lt;&#x2F;p&gt;
+&lt;p&gt;什么！？你要我去修改别人的垃圾代码？！&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>拼音输入法引擎</title>
+                <pubDate>Mon, 18 Jun 2018 00:00:00 +0000</pubDate>
+                <link>https://kemingy.github.io/blogs/pin-yin-shu-ru-fa-yin-qing/</link>
+                <guid>https://kemingy.github.io/blogs/pin-yin-shu-ru-fa-yin-qing/</guid>
+                <description>&lt;p&gt;最近在做 query rewriting 的时候，需要做一个拼音转中文的功能，做着做着，就差不多快做成一个拼音输入法引擎了。&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>拼写检查器</title>
+                <pubDate>Sun, 17 Jun 2018 00:00:00 +0000</pubDate>
+                <link>https://kemingy.github.io/blogs/rustpin-xie-jian-cha-qi/</link>
+                <guid>https://kemingy.github.io/blogs/rustpin-xie-jian-cha-qi/</guid>
+                <description>&lt;p&gt;跟拼写检查器还是有点渊源的。想当初做数学建模的时候，就遇到过一次类似的问题，于是去网上搜到 &lt;a href=&quot;http:&#x2F;&#x2F;norvig.com&#x2F;spell-correct.html&quot;&gt;Peter Norvig&lt;&#x2F;a&gt; 的教程，写的非常好，当时看到短短二十行代码就能很好解决这个问题，实在是惊艳。而我也是从那个时候开始学习 Python 的。当然，以我初学者的水平要想一时间完全看懂他的代码是不太可能的，不过还是能理解大体的流程，做了一定修改后留作自用。&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>Python 编码</title>
+                <pubDate>Sat, 24 Feb 2018 00:00:00 +0000</pubDate>
+                <link>https://kemingy.github.io/blogs/python-bian-ma/</link>
+                <guid>https://kemingy.github.io/blogs/python-bian-ma/</guid>
+                <description>&lt;p&gt;毫不客气地说，编码真的是 Python 使用者遇到的最多的问题之一。新手看了会崩溃，老手遇到会流泪（感叹以前踩过的坑）。&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>Rust 略详细的介绍</title>
+                <pubDate>Fri, 22 Dec 2017 00:00:00 +0000</pubDate>
+                <link>https://kemingy.github.io/blogs/rust-lue-xiang-xi-de-jie-shao/</link>
+                <guid>https://kemingy.github.io/blogs/rust-lue-xiang-xi-de-jie-shao/</guid>
+                <description>&lt;p&gt;Rust 是一门编译型系统编程语言。官方给出的定义是：&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Rust&lt;&#x2F;strong&gt; is a systems programming language that runs blazingly fast, prevents segfaults, and guarantees thread safety.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;可以看出这是一门主打效率，安全和并发的语言。&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+    </channel>
+</rss>

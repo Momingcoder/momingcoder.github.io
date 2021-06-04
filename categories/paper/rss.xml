@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Cyanide</title>
+        <link>https://kemingy.github.io</link>
+        <description></description>
+        <generator>Zola</generator>
+        <language>en</language>
+        <atom:link href="https://kemingy.github.io/categories/paper/rss.xml" rel="self" type="application/rss+xml"/>
+        <lastBuildDate>Mon, 01 Mar 2021 00:00:00 +0000</lastBuildDate>
+        
+            <item>
+                <title>Note for Resilient Distributed Datasets</title>
+                <pubDate>Mon, 01 Mar 2021 00:00:00 +0000</pubDate>
+                <link>https://kemingy.github.io/blogs/spark/</link>
+                <guid>https://kemingy.github.io/blogs/spark/</guid>
+                <description>&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;people.csail.mit.edu&#x2F;matei&#x2F;papers&#x2F;2012&#x2F;nsdi_spark.pdf&quot;&gt;Resilient Distributed Datasets: A Fault-Tolerant Abstraction forIn-Memory Cluster Computing&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>Note for MapReduce</title>
+                <pubDate>Fri, 25 Dec 2020 00:00:00 +0000</pubDate>
+                <link>https://kemingy.github.io/blogs/mapreduce/</link>
+                <guid>https://kemingy.github.io/blogs/mapreduce/</guid>
+                <description>&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;pdos.csail.mit.edu&#x2F;6.824&#x2F;papers&#x2F;mapreduce.pdf&quot;&gt;MapReduce: Simplified Data Processing on Large Clusters&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+    </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Cyanide</title>
+        <link>https://kemingy.github.io</link>
+        <description></description>
+        <generator>Zola</generator>
+        <language>en</language>
+        <atom:link href="https://kemingy.github.io/categories/game/rss.xml" rel="self" type="application/rss+xml"/>
+        <lastBuildDate>Sat, 16 Mar 2019 00:00:00 +0000</lastBuildDate>
+        
+            <item>
+                <title>意难平</title>
+                <pubDate>Sat, 16 Mar 2019 00:00:00 +0000</pubDate>
+                <link>https://kemingy.github.io/blogs/yi-nan-ping/</link>
+                <guid>https://kemingy.github.io/blogs/yi-nan-ping/</guid>
+                <description>&lt;blockquote&gt;
+&lt;p&gt;巫炤，他惩罚别人，也惩罚自己。他只是意难平。&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+</description>
+            </item>
+        
+    </channel>
+</rss>

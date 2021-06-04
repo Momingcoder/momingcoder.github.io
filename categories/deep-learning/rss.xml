@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Cyanide</title>
+        <link>https://kemingy.github.io</link>
+        <description></description>
+        <generator>Zola</generator>
+        <language>en</language>
+        <atom:link href="https://kemingy.github.io/categories/deep-learning/rss.xml" rel="self" type="application/rss+xml"/>
+        <lastBuildDate>Wed, 13 May 2020 00:00:00 +0000</lastBuildDate>
+        
+            <item>
+                <title>Deep Learning Serving Framework</title>
+                <pubDate>Wed, 13 May 2020 00:00:00 +0000</pubDate>
+                <link>https://kemingy.github.io/blogs/deep-learning-serving/</link>
+                <guid>https://kemingy.github.io/blogs/deep-learning-serving/</guid>
+                <description>&lt;p&gt;Yet another deep learning serving framework that is easy to use.&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>Deep Learning Serving Benchmark</title>
+                <pubDate>Wed, 22 Apr 2020 00:00:00 +0000</pubDate>
+                <link>https://kemingy.github.io/blogs/serving-benchmark/</link>
+                <guid>https://kemingy.github.io/blogs/serving-benchmark/</guid>
+                <description>&lt;p&gt;There is no black magic, everything follows the rules.&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>NLP with Deep Learning</title>
+                <pubDate>Fri, 05 Oct 2018 00:00:00 +0000</pubDate>
+                <link>https://kemingy.github.io/blogs/deeplearningnlp/</link>
+                <guid>https://kemingy.github.io/blogs/deeplearningnlp/</guid>
+                <description>&lt;p&gt;Notes of &lt;a href=&quot;http:&#x2F;&#x2F;web.stanford.edu&#x2F;class&#x2F;cs224n&#x2F;&quot;&gt;CS224n: Natural Language Processing with Deep Learning&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>Recommendation System Checklist</title>
+                <pubDate>Fri, 14 Sep 2018 00:00:00 +0000</pubDate>
+                <link>https://kemingy.github.io/blogs/recsys-checklist/</link>
+                <guid>https://kemingy.github.io/blogs/recsys-checklist/</guid>
+                <description>&lt;p&gt;Notes of &lt;a href=&quot;https:&#x2F;&#x2F;time.geekbang.org&#x2F;column&#x2F;74&quot;&gt;&amp;quot;36 strokes of recommended system&amp;quot;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>文本分类</title>
+                <pubDate>Fri, 24 Aug 2018 00:00:00 +0000</pubDate>
+                <link>https://kemingy.github.io/blogs/wen-ben-fen-lei/</link>
+                <guid>https://kemingy.github.io/blogs/wen-ben-fen-lei/</guid>
+                <description>&lt;p&gt;文本分类是最经典的机器学习问题之一，像 anti-spam，情感分析，语义相似等，都是以文本分类为核心建立起来的。当我们能处理好文本分类问题的时候，往往都能很好解决这些问题。&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>Deep Learning Applications</title>
+                <pubDate>Tue, 23 Jan 2018 00:00:00 +0000</pubDate>
+                <link>https://kemingy.github.io/blogs/deep-learning-applications/</link>
+                <guid>https://kemingy.github.io/blogs/deep-learning-applications/</guid>
+                <description>&lt;p&gt;Deep Learning Applications in NLP, CV and RL etc.&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>PyTorch 踩到的坑</title>
+                <pubDate>Mon, 15 Jan 2018 00:00:00 +0000</pubDate>
+                <link>https://kemingy.github.io/blogs/pytorch-cai-dao-de-keng/</link>
+                <guid>https://kemingy.github.io/blogs/pytorch-cai-dao-de-keng/</guid>
+                <description>&lt;p&gt;目前的深度学习框架实在太多了，初学者难免不知道选哪个才好，是追求曝光率最高的 &lt;code&gt;TensorFlow&lt;&#x2F;code&gt;，还是最 Geek 的 &lt;code&gt;MXNet&lt;&#x2F;code&gt;，又或是最易用的 &lt;code&gt;Keras&lt;&#x2F;code&gt;，又或者是最贴近 Python 编程思维的 &lt;code&gt;Pytorch&lt;&#x2F;code&gt;？&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>Basic NLP Knowledge</title>
+                <pubDate>Thu, 11 Aug 2016 00:00:00 +0000</pubDate>
+                <link>https://kemingy.github.io/blogs/natural-language-processing-knowledge/</link>
+                <guid>https://kemingy.github.io/blogs/natural-language-processing-knowledge/</guid>
+                <description>&lt;p&gt;&lt;a href=&quot;http:&#x2F;&#x2F;web.stanford.edu&#x2F;%7Ejurafsky&#x2F;NLPCourseraSlides.html&quot;&gt;&lt;em&gt;Notes of Stanford NLP course&lt;&#x2F;em&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+    </channel>
+</rss>

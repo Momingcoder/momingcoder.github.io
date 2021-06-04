@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Cyanide</title>
+        <link>https://kemingy.github.io</link>
+        <description></description>
+        <generator>Zola</generator>
+        <language>en</language>
+        <atom:link href="https://kemingy.github.io/categories/life/rss.xml" rel="self" type="application/rss+xml"/>
+        <lastBuildDate>Tue, 30 Mar 2021 00:00:00 +0000</lastBuildDate>
+        
+            <item>
+                <title>Long Time No See</title>
+                <pubDate>Tue, 30 Mar 2021 00:00:00 +0000</pubDate>
+                <link>https://kemingy.github.io/blogs/long-time-no-see/</link>
+                <guid>https://kemingy.github.io/blogs/long-time-no-see/</guid>
+                <description>&lt;p&gt;Why haven&#x27;t you post any blogs for the past half year?
+In short, I&#x27;m too lazy.&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>2019 回顾</title>
+                <pubDate>Mon, 30 Dec 2019 00:00:00 +0000</pubDate>
+                <link>https://kemingy.github.io/blogs/2019recap/</link>
+                <guid>https://kemingy.github.io/blogs/2019recap/</guid>
+                <description>&lt;p&gt;划水摸鱼又一年。&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>极简流浪生活</title>
+                <pubDate>Sun, 21 Jul 2019 00:00:00 +0000</pubDate>
+                <link>https://kemingy.github.io/blogs/minimalist/</link>
+                <guid>https://kemingy.github.io/blogs/minimalist/</guid>
+                <description>&lt;p&gt;Less(poor) is more(hard).&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>极客的爱情</title>
+                <pubDate>Mon, 17 Jun 2019 00:00:00 +0000</pubDate>
+                <link>https://kemingy.github.io/blogs/geek-love/</link>
+                <guid>https://kemingy.github.io/blogs/geek-love/</guid>
+                <description>&lt;p&gt;我并非故意要标榜极客是多么另类的群体，只不过当两个极客相遇并惺惺相惜，他们之间法生的很多事情确实有趣的很，至少对其他极客来讲。而这样的事情，放在普通人身上或许只会让人觉得奇怪吧。嗯，看起来还是比较另类的。&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>996ICU</title>
+                <pubDate>Sun, 28 Apr 2019 00:00:00 +0000</pubDate>
+                <link>https://kemingy.github.io/blogs/996/</link>
+                <guid>https://kemingy.github.io/blogs/996/</guid>
+                <description>&lt;p&gt;那个 &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;996icu&#x2F;996.ICU&quot;&gt;996.icu&lt;&#x2F;a&gt; 的项目也快一个月了，现在 star 增长不多了，估计不会突破 250k。我早就觉得有写点什么的必要了。&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>自杀式单身</title>
+                <pubDate>Sat, 19 Jan 2019 00:00:00 +0000</pubDate>
+                <link>https://kemingy.github.io/blogs/zi-sha-shi-dan-shen/</link>
+                <guid>https://kemingy.github.io/blogs/zi-sha-shi-dan-shen/</guid>
+                <description>&lt;p&gt;自杀式单身：形容一直单身又不主动扩展社交范围去认识新朋友，却每天幻想着能拥有爱情的行为。&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>2018 回顾</title>
+                <pubDate>Tue, 25 Dec 2018 00:00:00 +0000</pubDate>
+                <link>https://kemingy.github.io/blogs/2018review/</link>
+                <guid>https://kemingy.github.io/blogs/2018review/</guid>
+                <description>&lt;p&gt;很快就到年末了，对比之前的 2018 年的目标，来总结一下吧。&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>2018 做点什么</title>
+                <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+                <link>https://kemingy.github.io/blogs/2018-zuo-dian-shi-yao/</link>
+                <guid>https://kemingy.github.io/blogs/2018-zuo-dian-shi-yao/</guid>
+                <description>&lt;p&gt;这篇当然不是 2018 第一天写的，毕竟这一年已经懒了太多了。写这篇的目的，无非就是总结一下自己的 2017，然后展望下自己的 2018 。&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>大学这四年</title>
+                <pubDate>Tue, 19 Dec 2017 00:00:00 +0000</pubDate>
+                <link>https://kemingy.github.io/blogs/da-xue-zhe-si-nian/</link>
+                <guid>https://kemingy.github.io/blogs/da-xue-zhe-si-nian/</guid>
+                <description>&lt;p&gt;时光飞逝，还没来得及好好享受，就已经大学毕业了。&lt;&#x2F;p&gt;
+&lt;p&gt;回想这四年的时光，虽然多是无聊的日子，但多少也有一些值得怀念的记忆。&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>无聊写博客</title>
+                <pubDate>Sun, 05 Nov 2017 00:00:00 +0000</pubDate>
+                <link>https://kemingy.github.io/blogs/wu-liao-xie-bo-ke/</link>
+                <guid>https://kemingy.github.io/blogs/wu-liao-xie-bo-ke/</guid>
+                <description>&lt;p&gt;大概一年多没有写博客了。这一年间，多多少少接触了很多工业界的东西，不少东西还是值得记下的。更重要的是，很多东西不记下来自己就忘了，用的时候查资料也不一定方便，毕竟不是每个开源项目的文档都写得那么好用，也只有自己写出来的才最适合自己。&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+    </channel>
+</rss>

@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>
+Cyanide - NGINX Cookbook note
+</title>
+
+    <link rel="stylesheet" href="https:&#x2F;&#x2F;kemingy.github.io&#x2F;style.css">
+
+    
+    <link rel="alternate" type="application/rss+xml" title="RSS"
+        href="https:&#x2F;&#x2F;kemingy.github.io&#x2F;rss.xml">
+    
+
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css"
+        integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"
+        integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz"
+        crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"
+        integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+        onload="renderMathInElement(document.body, {delimiters:[
+        {left: '$$', right: '$$', display: true},
+        {left: '\\[', right: '\\]', display: true},
+        {left: '$', right: '$', display: false},
+        {left: '\\(', right: '\\)', display: false}]});"></script>
+    
+
+    
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🖋</text></svg>">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="mobile-navbar">
+            <div class="mobile-header">
+                <a href="/" class="title">Cyanide</a>
+            </div>
+            <div class="mobile-navbar-icon icon-out" id="mobile-nav-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <nav class="mobile-menu" id="mobile-menu">
+            <ul class="mobile-menu-list">
+                
+                <li class="mobile-menu-item">
+                    <a href="https:&#x2F;&#x2F;kemingy.github.io">
+                        Home
+                    </a>
+                </li>
+                
+                <li class="mobile-menu-item">
+                    <a href="https:&#x2F;&#x2F;kemingy.github.io&#x2F;categories">
+                        Categories
+                    </a>
+                </li>
+                
+                <li class="mobile-menu-item">
+                    <a href="https:&#x2F;&#x2F;kemingy.github.io&#x2F;archive">
+                        Archive
+                    </a>
+                </li>
+                
+                <li class="mobile-menu-item">
+                    <a href="https:&#x2F;&#x2F;kemingy.github.io&#x2F;about">
+                        About
+                    </a>
+                </li>
+                
+                <li class="mobile-menu-item">
+                    <a href="https:&#x2F;&#x2F;kemingy.github.io&#x2F;projects">
+                        Projects
+                    </a>
+                </li>
+                
+            </ul>
+        </nav>
+
+        <header>
+            <div class="title">
+                <a href="https:&#x2F;&#x2F;kemingy.github.io">Cyanide</a>
+            </div>
+            <nav class="menu">
+                <ul>
+                    
+                    <li>
+                        <a href="https:&#x2F;&#x2F;kemingy.github.io">
+                            Home
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="https:&#x2F;&#x2F;kemingy.github.io&#x2F;categories">
+                            Categories
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="https:&#x2F;&#x2F;kemingy.github.io&#x2F;archive">
+                            Archive
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="https:&#x2F;&#x2F;kemingy.github.io&#x2F;about">
+                            About
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="https:&#x2F;&#x2F;kemingy.github.io&#x2F;projects">
+                            Projects
+                        </a>
+                    </li>
+                    
+                </ul>
+            </nav>
+        </header>
+
+        <hr class="gradient">
+
+        <main>
+            <div class="content">
+                
+
+<div class="toc">
+    <h2 class="toc-title">Contents</h2>
+    <div class="toc-content always-active">
+        <ul>
+            
+            <li>
+                <a href="https://kemingy.github.io/blogs/nginx/#basic" class="toc-link">Basic</a>
+                
+                <ul>
+                    
+                    <li>
+                        <a href="https://kemingy.github.io/blogs/nginx/#config-file" class="toc-link">Config file</a>
+                    </li>
+                    
+                </ul>
+                
+            </li>
+            
+            <li>
+                <a href="https://kemingy.github.io/blogs/nginx/#high-performance" class="toc-link">High performance</a>
+                
+                <ul>
+                    
+                    <li>
+                        <a href="https://kemingy.github.io/blogs/nginx/#load-balance" class="toc-link">Load balance</a>
+                    </li>
+                    
+                </ul>
+                
+            </li>
+            
+            <li>
+                <a href="https://kemingy.github.io/blogs/nginx/#traffic-management" class="toc-link">Traffic management</a>
+                
+                <ul>
+                    
+                    <li>
+                        <a href="https://kemingy.github.io/blogs/nginx/#a-b-testing" class="toc-link">A&#x2F;B testing</a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://kemingy.github.io/blogs/nginx/#limiting-connections" class="toc-link">Limiting connections</a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://kemingy.github.io/blogs/nginx/#limiting-rate" class="toc-link">Limiting rate</a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://kemingy.github.io/blogs/nginx/#limiting-bandwidth" class="toc-link">Limiting bandwidth</a>
+                    </li>
+                    
+                </ul>
+                
+            </li>
+            
+            <li>
+                <a href="https://kemingy.github.io/blogs/nginx/#massive-scalable-content-caching" class="toc-link">Massive scalable content caching</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://kemingy.github.io/blogs/nginx/#authentication" class="toc-link">Authentication</a>
+                
+                <ul>
+                    
+                    <li>
+                        <a href="https://kemingy.github.io/blogs/nginx/#http-basic-authentication" class="toc-link">HTTP basic authentication</a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://kemingy.github.io/blogs/nginx/#authentication-subrequest" class="toc-link">Authentication subrequest</a>
+                    </li>
+                    
+                </ul>
+                
+            </li>
+            
+            <li>
+                <a href="https://kemingy.github.io/blogs/nginx/#security-controls" class="toc-link">Security controls</a>
+                
+                <ul>
+                    
+                    <li>
+                        <a href="https://kemingy.github.io/blogs/nginx/#access-based-on-ip-address" class="toc-link">Access based on IP address</a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://kemingy.github.io/blogs/nginx/#allowing-cross-origin-resource-sharing" class="toc-link">Allowing cross-origin resource sharing</a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://kemingy.github.io/blogs/nginx/#client-side-encryption" class="toc-link">Client-side encryption</a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://kemingy.github.io/blogs/nginx/#upstream-encryption" class="toc-link">Upstream Encryption</a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://kemingy.github.io/blogs/nginx/#securing-a-location" class="toc-link">Securing a location</a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://kemingy.github.io/blogs/nginx/#securing-a-location-with-an-expire-date" class="toc-link">Securing a location with an expire date</a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://kemingy.github.io/blogs/nginx/#https-redirects" class="toc-link">HTTPS redirects</a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://kemingy.github.io/blogs/nginx/#redirecting-to-https-where-ssl-tls-is-terminated-before-nginx" class="toc-link">Redirecting to HTTPS where SSL&#x2F;TLS is terminated before Nginx</a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://kemingy.github.io/blogs/nginx/#satisfying-any-number-of-security-methods" class="toc-link">Satisfying any number of security methods</a>
+                    </li>
+                    
+                </ul>
+                
+            </li>
+            
+            <li>
+                <a href="https://kemingy.github.io/blogs/nginx/#http-2" class="toc-link">HTTP&#x2F;2</a>
+                
+                <ul>
+                    
+                    <li>
+                        <a href="https://kemingy.github.io/blogs/nginx/#basic-configuration" class="toc-link">Basic configuration</a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://kemingy.github.io/blogs/nginx/#grpc" class="toc-link">gRPC</a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://kemingy.github.io/blogs/nginx/#http-2-server-push" class="toc-link">HTTP&#x2F;2 server push</a>
+                    </li>
+                    
+                </ul>
+                
+            </li>
+            
+            <li>
+                <a href="https://kemingy.github.io/blogs/nginx/#sophisticated-media-streaming" class="toc-link">Sophisticated media streaming</a>
+                
+                <ul>
+                    
+                    <li>
+                        <a href="https://kemingy.github.io/blogs/nginx/#serving-mp4-and-flv" class="toc-link">Serving MP4 and FLV</a>
+                    </li>
+                    
+                </ul>
+                
+            </li>
+            
+            <li>
+                <a href="https://kemingy.github.io/blogs/nginx/#containers-microservices" class="toc-link">Containers&#x2F;Microservices</a>
+                
+                <ul>
+                    
+                    <li>
+                        <a href="https://kemingy.github.io/blogs/nginx/#official-nginx-image" class="toc-link">Official NGINX image</a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://kemingy.github.io/blogs/nginx/#creating-an-nginx-dockerfile" class="toc-link">Creating an NGINX Dockerfile</a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://kemingy.github.io/blogs/nginx/#use-environment-variables-in-nginx" class="toc-link">Use environment variables in NGINX</a>
+                    </li>
+                    
+                </ul>
+                
+            </li>
+            
+            <li>
+                <a href="https://kemingy.github.io/blogs/nginx/#advanced-activity-monitoring" class="toc-link">Advanced activity monitoring</a>
+                
+                <ul>
+                    
+                    <li>
+                        <a href="https://kemingy.github.io/blogs/nginx/#enable-nginx-open-source-stub-status" class="toc-link">Enable NGINX Open Source stub status</a>
+                    </li>
+                    
+                </ul>
+                
+            </li>
+            
+            <li>
+                <a href="https://kemingy.github.io/blogs/nginx/#debuggin-and-troubleshooting-with-access-logs-error-logs-and-request-tracing" class="toc-link">Debuggin and troubleshooting with access logs, error logs, and request tracing</a>
+                
+                <ul>
+                    
+                    <li>
+                        <a href="https://kemingy.github.io/blogs/nginx/#configuring-access-logs-and-error-logs" class="toc-link">Configuring access logs and error logs</a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://kemingy.github.io/blogs/nginx/#forwarding-to-syslog" class="toc-link">Forwarding to syslog</a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://kemingy.github.io/blogs/nginx/#request-tracing" class="toc-link">Request tracing</a>
+                    </li>
+                    
+                </ul>
+                
+            </li>
+            
+            <li>
+                <a href="https://kemingy.github.io/blogs/nginx/#performance-tuning" class="toc-link">Performance tuning</a>
+                
+                <ul>
+                    
+                    <li>
+                        <a href="https://kemingy.github.io/blogs/nginx/#keeping-connections-open-to-clients" class="toc-link">Keeping connections open to clients</a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://kemingy.github.io/blogs/nginx/#keeping-connections-open-upstream" class="toc-link">Keeping connections open upstream</a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://kemingy.github.io/blogs/nginx/#buffering-responses" class="toc-link">Buffering responses</a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://kemingy.github.io/blogs/nginx/#buffering-access-log" class="toc-link">Buffering access log</a>
+                    </li>
+                    
+                    <li>
+                        <a href="https://kemingy.github.io/blogs/nginx/#os-tuning" class="toc-link">OS tuning</a>
+                    </li>
+                    
+                </ul>
+                
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+<article class="post">
+    <div class="post-title">
+        <a href="https:&#x2F;&#x2F;kemingy.github.io&#x2F;blogs&#x2F;nginx&#x2F;">NGINX Cookbook note</a>
+    </div>
+    <div class="post-meta">
+        <span class="post-time">
+            📅 2019-07-27
+        </span>
+        <span class="post-reading-time">
+            ⌛ 6 min
+        </span>
+        
+        <div class="post-category">
+            
+            <a href="https:&#x2F;&#x2F;kemingy.github.io&#x2F;categories&#x2F;technology&#x2F;">
+                Technology
+            </a>
+            
+        </div>
+        
+    </div>
+    <div class="post-content">
+        <p>NGINX Plus looks great :)</p>
+<span id="continue-reading"></span><h2 id="basic">Basic</h2>
+<h3 id="config-file">Config file</h3>
+<ul>
+<li>location: <code>/etc/nginx</code></li>
+<li>main: <code>/etc/nginx/nginx.conf</code></li>
+<li>include: <code>/etc/nginx/conf.d/*.conf</code></li>
+</ul>
+<p>basic config:</p>
+<pre style="background-color:#ffffff;">
+<span style="color:#718c00;">server {
+    listen 80 default_server;  </span><span style="color:#999999;"># port, default_server means all the traffic and ignore server_name
+    </span><span style="color:#718c00;">server_name www.example.com;  </span><span style="color:#999999;"># only match the request for this server_name
+    
+    </span><span style="color:#718c00;">location / {  </span><span style="color:#999999;"># all traffic
+        </span><span style="color:#718c00;">root /usr/share/nginx/html;  </span><span style="color:#999999;"># file location
+        </span><span style="color:#718c00;">index index.html index.htm;  </span><span style="color:#999999;"># default file
+</span><span style="color:#4d4d4c;">    }
+}
+</span></pre>
+<ul>
+<li>test config: <code>nginx -t</code></li>
+<li>graceful reload: <code>nginx -s reload</code></li>
+</ul>
+<h2 id="high-performance">High performance</h2>
+<h3 id="load-balance">Load balance</h3>
+<pre style="background-color:#ffffff;">
+<span style="color:#718c00;">upstream backend {
+    least_conn;  </span><span style="color:#999999;"># load balancing method
+    </span><span style="color:#718c00;">server 10.0.0.1:80 weight=1 max_fails=3 fail_timeout=3s;
+    server app.example.com:80 weight=2;</span><span style="color:#4d4d4c;">
+}
+
+</span><span style="color:#718c00;">server {
+    location / {
+        listen 80;
+        proxy_pass backend;
+        health_check interval=10 passes=2 fails=3;</span><span style="color:#4d4d4c;">
+    }
+}
+</span></pre>
+<p>Load balancing methods:</p>
+<ul>
+<li>Round Robin</li>
+<li>Least connection</li>
+<li>Least time (plus)</li>
+<li>Generic hash</li>
+<li>IP hash</li>
+<li>Random</li>
+</ul>
+<h2 id="traffic-management">Traffic management</h2>
+<h3 id="a-b-testing">A/B testing</h3>
+<pre style="background-color:#ffffff;">
+<span style="color:#718c00;">split_clients &quot;${remote_addr}AAA&quot; $variant {
+               20.0%              &quot;backendv2&quot;;</span><span style="color:#4d4d4c;">
+               *                  </span><span style="color:#718c00;">&quot;backendv1&quot;;</span><span style="color:#4d4d4c;">
+}
+
+</span><span style="color:#718c00;">server {
+    </span><span style="color:#f5871f;">...
+    </span><span style="color:#718c00;">location / {
+        </span><span style="color:#f5871f;">...
+        </span><span style="color:#718c00;">proxy_pass http://api.com/$variant</span><span style="color:#4d4d4c;">
+    }
+}
+</span></pre><h3 id="limiting-connections">Limiting connections</h3>
+<pre style="background-color:#ffffff;">
+<span style="color:#718c00;">http {
+    limit_conn_zone $binary_remote_addr zone=limitbyaddr:10m;
+    limit_conn_status 429;
+    </span><span style="color:#f5871f;">...
+    </span><span style="color:#718c00;">server {
+        </span><span style="color:#f5871f;">...
+        </span><span style="color:#718c00;">limit_conn limitbyaddr 40;  </span><span style="color:#999999;"># limit_zone &amp; allowed number
+        </span><span style="color:#f5871f;">...</span><span style="color:#4d4d4c;">
+    }
+}
+</span></pre><h3 id="limiting-rate">Limiting rate</h3>
+<pre style="background-color:#ffffff;">
+<span style="color:#718c00;">http {
+    limit_req_zone $binary_remote_addr zone=limitbyaddr:10m rate=1r/s;
+    limit_req_status 429;
+    </span><span style="color:#f5871f;">...
+    </span><span style="color:#718c00;">server {
+        </span><span style="color:#f5871f;">...
+        </span><span style="color:#718c00;">limit_req zone=limitbyaddr burst=10 nodelay;
+        </span><span style="color:#f5871f;">...</span><span style="color:#4d4d4c;">
+    }
+}
+</span></pre><h3 id="limiting-bandwidth">Limiting bandwidth</h3>
+<p>This limit is per connection.</p>
+<pre style="background-color:#ffffff;">
+<span style="color:#4d4d4c;">location /download/ {
+    limit_rate_after 10m;
+    limit_rate 1m;
+}
+</span></pre><h2 id="massive-scalable-content-caching">Massive scalable content caching</h2>
+<pre style="background-color:#ffffff;">
+<span style="color:#718c00;">proxy_cache_path /var/nginx/cache
+                 keys_zone=CACHE:60m
+                 levels=1:2
+                 inactive=3h
+                 max_size=20g;
+server {
+    </span><span style="color:#f5871f;">...
+    </span><span style="color:#718c00;">proxy_cache_key &quot;$host$request_uri $cookie_user&quot;;  </span><span style="color:#999999;"># default is $scheme$proxy_host$request_uri
+    </span><span style="color:#718c00;">proxy_set_header Range $slice_range;
+    proxy_http_version 1.1;
+    proxy_cache_valid 200 206 1h;
+    proxy_cache_bypass $http_cache_bypass;
+    proxy_cache CACHE;
+    slice 1m;  </span><span style="color:#999999;"># for HTML5 video
+    
+    </span><span style="color:#718c00;">location / {
+        proxy_pass http://origin:80;</span><span style="color:#4d4d4c;">
+    }
+
+    </span><span style="color:#718c00;">location ~* \.(css|js)$ {
+        expires 1y;
+        add_header Cache-Control &quot;public&quot;;</span><span style="color:#4d4d4c;">
+    }
+</span></pre><h2 id="authentication">Authentication</h2>
+<h3 id="http-basic-authentication">HTTP basic authentication</h3>
+<p>Provide a username-password file like:</p>
+<pre style="background-color:#ffffff;">
+<span style="color:#4d4d4c;">name1:password1
+name2:password2:comment
+</span></pre>
+<p>Both <code>openssl</code> and <code>htpasswd</code> can generate passwords with the <code>apr1</code> algorithm, which can be understand by Nginx.</p>
+<pre style="background-color:#ffffff;">
+<span style="color:#718c00;">location / {
+    auth_basic &quot;Not allowed for unauthenticated users&quot;;
+    auth_basic_user_file conf.d/passwd;</span><span style="color:#4d4d4c;">
+}
+</span></pre><h3 id="authentication-subrequest">Authentication subrequest</h3>
+<pre style="background-color:#ffffff;">
+<span style="color:#718c00;">location /private/ {
+    auth_request /auth;
+    auth_request_set $auth_status $upstream_status;</span><span style="color:#4d4d4c;">
+}
+
+</span><span style="color:#718c00;">location = /auth {
+    internal;
+    proxy_pass http://auth-server;
+    proxy_pass_request_body off;
+    proxy_set_header Content-Length &quot;&quot;;
+    proxy_set_header X-Original-URI $request_uri;</span><span style="color:#4d4d4c;">
+}
+</span></pre><h2 id="security-controls">Security controls</h2>
+<h3 id="access-based-on-ip-address">Access based on IP address</h3>
+<pre style="background-color:#ffffff;">
+<span style="color:#718c00;">location /admin/ {
+    deny 10.0.0.1;
+    allow 10.0.0.0/20;
+    allow 2001:0db8::/32;
+    deny all;</span><span style="color:#4d4d4c;">
+}
+</span></pre><h3 id="allowing-cross-origin-resource-sharing">Allowing cross-origin resource sharing</h3>
+<pre style="background-color:#ffffff;">
+<span style="color:#718c00;">map $request_method $cors_method {
+    OPTIONS 11;
+    GET 1;
+    POST 1;
+    default 0;</span><span style="color:#4d4d4c;">
+}
+
+</span><span style="color:#718c00;">server {
+    </span><span style="color:#f5871f;">...
+    </span><span style="color:#718c00;">location / {
+        if ($cors_method ~ &#39;1&#39;) {
+            add_header &#39;Access-Control-Allow-Methods&#39; &#39;GET,POST,OPTIONS&#39;;
+            add_header &#39;Access-Control-Allow-Origin&#39; &#39;*.example.com&#39;;
+            add_header &#39;Access-Control-Allow-Headers&#39;
+                       &#39;DNT,
+                        Keep-Alive,
+                        User-Agent,
+                        X-Requested-With,
+                        If-Modified-Since,
+                        Cache-Control,
+                        Content-Type&#39;;</span><span style="color:#4d4d4c;">
+        }
+        </span><span style="color:#718c00;">if ($cors_method = &#39;11&#39;) {
+            add_header &#39;Access-Control-Max-Age&#39; 1728000;
+            add_header &#39;Content-Type&#39; &#39;text/plain; charset=UTF-8&#39;;
+            add_header &#39;Content-Length&#39; 0;
+            return 204;</span><span style="color:#4d4d4c;">
+        }
+    }
+}
+</span></pre><h3 id="client-side-encryption">Client-side encryption</h3>
+<pre style="background-color:#ffffff;">
+<span style="color:#718c00;">http { </span><span style="color:#999999;"># All directives used below are also valid in stream
+    </span><span style="color:#718c00;">server {
+    listen 8433 ssl;
+    ssl_protocols TLSv1.2 TLSv1.3;
+    ssl_ciphers HIGH:!aNULL:!MD5;
+    ssl_certificate /etc/nginx/ssl/example.pem;
+    ssl_certificate_key /etc/nginx/ssl/example.key;
+    ssl_certificate /etc/nginx/ssl/example.ecdsa.crt;
+    ssl_certificate_key /etc/nginx/ssl/example.ecdsa.key;
+    ssl_session_cache shared:SSL:10m;
+    ssl_session_timeout 10m;</span><span style="color:#4d4d4c;">
+    }
+}
+</span></pre>
+<p>Elliptic Curve Cryptography(ECC) certifications are found to be faster than the equivalent-strength RSA certifications.</p>
+<h3 id="upstream-encryption">Upstream Encryption</h3>
+<pre style="background-color:#ffffff;">
+<span style="color:#718c00;">location / {
+    proxy_pass https://upstream.example.com;
+    proxy_ssl_verify on;
+    proxy_ssl_verify_depth 2;
+    proxy_ssl_protocols TLSv1.2;</span><span style="color:#4d4d4c;">
+}
+</span></pre><h3 id="securing-a-location">Securing a location</h3>
+<pre style="background-color:#ffffff;">
+<span style="color:#718c00;">location /resources {
+    secure_link_secret mySecret;
+    if ($secure_link = &quot;&quot;) { return 403; }
+    
+    rewrite ^ /secured/$secure_link;</span><span style="color:#4d4d4c;">
+}
+
+</span><span style="color:#718c00;">location /secured/ {
+    internal;
+    root /var/www;</span><span style="color:#4d4d4c;">
+}
+</span></pre><h3 id="securing-a-location-with-an-expire-date">Securing a location with an expire date</h3>
+<pre style="background-color:#ffffff;">
+<span style="color:#718c00;">location /resources {
+    root /var/www;
+    secure_link $arg_md5,$arg_expires;
+    secure_link_md5 &quot;$secure_link_expires$uri$remote_addr mySecret&quot;;
+    if ($secure_link = &quot;&quot;) { return 403; }
+    if ($secure_link = 0) { return 410; }</span><span style="color:#4d4d4c;">
+}
+</span></pre><h3 id="https-redirects">HTTPS redirects</h3>
+<pre style="background-color:#ffffff;">
+<span style="color:#718c00;">server {
+    listen 80 default_server;
+    listen [::]:80 default_server;
+    server_name _;
+    return 301 https://$host$request_uri;</span><span style="color:#4d4d4c;">
+}
+</span></pre><h3 id="redirecting-to-https-where-ssl-tls-is-terminated-before-nginx">Redirecting to HTTPS where SSL/TLS is terminated before Nginx</h3>
+<pre style="background-color:#ffffff;">
+<span style="color:#718c00;">server {
+    listen 80 default_server;
+    listen [::]:80 default_server;
+    server_name _;
+    if ($http_x_forwarded_proto = &#39;http&#39;) {
+        return 301 https://$host$request_uri;</span><span style="color:#4d4d4c;">
+    }
+}
+</span></pre><h3 id="satisfying-any-number-of-security-methods">Satisfying any number of security methods</h3>
+<pre style="background-color:#ffffff;">
+<span style="color:#718c00;">location / {
+    satisfy any;
+    allow 192.168.1.0/24;
+    deny all;
+    
+    auth_basic &quot;closed site&quot;;
+    auth_basic_user_file conf/htpasswd;</span><span style="color:#4d4d4c;">
+}
+</span></pre><h2 id="http-2">HTTP/2</h2>
+<h3 id="basic-configuration">Basic configuration</h3>
+<pre style="background-color:#ffffff;">
+<span style="color:#718c00;">server {
+    listen 443 ssl http2 default_server;
+    
+    ssl_certificate server.crt;
+    ssl_certificate_key server.key;
+    
+    </span><span style="color:#999999;"># add gRPC
+    </span><span style="color:#718c00;">location /service1 {
+        grpc_pass grpc://backend.local:50051;  </span><span style="color:#999999;"># unencrypted
+</span><span style="color:#4d4d4c;">    }
+    </span><span style="color:#718c00;">location /service2 {
+        grpc_pass grpcs://backend.local:50052;  </span><span style="color:#999999;"># encrypted
+</span><span style="color:#4d4d4c;">    }
+    </span><span style="color:#f5871f;">...</span><span style="color:#4d4d4c;">
+}
+</span></pre><h3 id="grpc">gRPC</h3>
+<pre style="background-color:#ffffff;">
+<span style="color:#718c00;">server {
+    listen 80 http2;  </span><span style="color:#999999;"># unencrypted
+    
+    </span><span style="color:#718c00;">location / {
+        grpc_pass grpc://backend.local:50051;</span><span style="color:#4d4d4c;">
+    }
+}
+</span></pre><h3 id="http-2-server-push">HTTP/2 server push</h3>
+<pre style="background-color:#ffffff;">
+<span style="color:#718c00;">server {
+    listen 443 ssl http2 default_server;
+    
+    ssl_certificate server.crt;
+    ssl_certificate_key server.key;
+    root /usr/share/nginx/html;
+    
+    location = /demo.html {
+        http2_push /style.css;
+        http2_push /image1.jpg;</span><span style="color:#4d4d4c;">
+    }
+}
+</span></pre><h2 id="sophisticated-media-streaming">Sophisticated media streaming</h2>
+<h3 id="serving-mp4-and-flv">Serving MP4 and FLV</h3>
+<pre style="background-color:#ffffff;">
+<span style="color:#718c00;">http {
+    server {
+        </span><span style="color:#f5871f;">...
+        </span><span style="color:#718c00;">location /videos/ {  </span><span style="color:#999999;"># files in this directory are in MP4 format type
+            </span><span style="color:#718c00;">mp4;</span><span style="color:#4d4d4c;">
+        }
+        </span><span style="color:#718c00;">location ~ \.flv$ {  </span><span style="color:#999999;"># any files ending in .flv are in FLV format
+            </span><span style="color:#718c00;">flv;</span><span style="color:#4d4d4c;">
+        }
+    }
+}
+</span></pre><h2 id="containers-microservices">Containers/Microservices</h2>
+<h3 id="official-nginx-image">Official NGINX image</h3>
+<pre style="background-color:#ffffff;">
+<span style="color:#c82829;">docker</span><span style="color:#4271ae;"> run</span><span style="color:#f5871f;"> --name</span><span style="color:#4271ae;"> my-nginx</span><span style="color:#f5871f;"> -p</span><span style="color:#4271ae;"> 80:80</span><span style="color:#f5871f;"> -v</span><span style="color:#4271ae;"> /path/to/content:/usr/share/nginx/html:ro</span><span style="color:#f5871f;"> -d</span><span style="color:#4271ae;"> nginx
+</span></pre>
+<p>This maps <code>locolhost:80</code> to port 80 of the container, and mounts the local directory <code>/path/to/content</code> as a container volume at <code>/usr/share/nginx/html</code> as read only.</p>
+<h3 id="creating-an-nginx-dockerfile">Creating an NGINX Dockerfile</h3>
+<pre style="background-color:#ffffff;">
+<span style="color:#4d4d4c;">FROM centos:7
+
+RUN yum -y install epel-release &amp;&amp; \
+    yum -y install nginx
+    
+ADD /nginx-conf /etc/nginx
+
+EXPOSE 80 443
+
+CMD [&#39;nginx&#39;]
+</span></pre><h3 id="use-environment-variables-in-nginx">Use environment variables in NGINX</h3>
+<pre style="background-color:#ffffff;">
+<span style="color:#718c00;">daemon off;
+env APP_NDS;
+include /usr/share/nginx/modules/*.conf;
+</span><span style="color:#4d4d4c;">...
+</span><span style="color:#718c00;">http {
+    perl_set $upstream_app &#39;sub { return $ENV{&quot;APP_DNS&quot;}; }&#39;;
+    server {
+        </span><span style="color:#f5871f;">...
+        </span><span style="color:#718c00;">location / {
+            proxy_pass https://$upstream_app;</span><span style="color:#4d4d4c;">
+        }
+    }
+}
+</span></pre>
+<p>To use <code>perl_set</code> you must have the <code>ngx_http_perl_module</code> installed. (<code>yum -y install nginx nginx-mod-http-perl</code>)</p>
+<h2 id="advanced-activity-monitoring">Advanced activity monitoring</h2>
+<h3 id="enable-nginx-open-source-stub-status">Enable NGINX Open Source stub status</h3>
+<pre style="background-color:#ffffff;">
+<span style="color:#718c00;">location /stub_status {
+    stub_status;
+    allow 127.0.0.1;
+    deny all;</span><span style="color:#4d4d4c;">
+}
+</span></pre><h2 id="debuggin-and-troubleshooting-with-access-logs-error-logs-and-request-tracing">Debuggin and troubleshooting with access logs, error logs, and request tracing</h2>
+<h3 id="configuring-access-logs-and-error-logs">Configuring access logs and error logs</h3>
+<pre style="background-color:#ffffff;">
+<span style="color:#718c00;">http {
+    log_format geoproxy
+               &#39;[$time_local] $remote_addr &#39;
+               &#39;$realip_remote_addr $remote_user &#39;
+               &#39;$request_method $server_protocol &#39;
+               &#39;$schema $server_name $uri $status &#39;
+               &#39;$request_time $body_bytes_sent &#39;
+               &#39;$geoip_city_country_code3 $geoip_region &#39;
+               &#39;&quot;$geoip_city&quot; $http_x_forwarded_for &#39;
+               &#39;$upstream_status $upstream_response_time &#39;
+               &#39;&quot;$http_referer&quot; &quot;$http_user_agent&quot;&#39;;
+    </span><span style="color:#f5871f;">...
+    </span><span style="color:#718c00;">server {
+        access_log /var/log/nginx/access.log geoproxy;
+        error_log /var/log/nginx/error.log warn;
+        </span><span style="color:#f5871f;">...</span><span style="color:#4d4d4c;">
+    }
+}
+</span></pre><h3 id="forwarding-to-syslog">Forwarding to syslog</h3>
+<pre style="background-color:#ffffff;">
+<span style="color:#718c00;">error_log syslog:server=10.0.0.1 debug;
+access_log syslog:server=10.0.0.1,tag=nginx,severity=info geoproxy;
+</span></pre>
+<p>A common log aggregation stack is ElasticSearch, Logstash, and Kibana(ELK stack).</p>
+<h3 id="request-tracing">Request tracing</h3>
+<p>Using <code>request_id</code> to track request. It will generate string of 32 hex characters.</p>
+<pre style="background-color:#ffffff;">
+<span style="color:#718c00;">log_format trace &#39;$remote_addr - $remote_user [$time_local] &#39;
+                 &#39;&quot;$request&quot; $status $body_bytes_sent &#39;
+                 &#39;&quot;$http_referer&quot; &quot;$http_user_agent&quot; &#39;
+                 &#39;&quot;$http_x_forwarded_for&quot; $request_id&#39;;
+upstream backend {
+    server 10.0.0.1;</span><span style="color:#4d4d4c;">
+}
+</span><span style="color:#718c00;">server {
+    listen 80;
+    add_header X-Request-ID $request_id;
+    location / {
+        proxy_pass http://backend;
+        proxy_set_header X-Request_ID $request_id;
+        access_log /var/log/nginx/access_trace.log trace;</span><span style="color:#4d4d4c;">
+    }
+}
+</span></pre><h2 id="performance-tuning">Performance tuning</h2>
+<h3 id="keeping-connections-open-to-clients">Keeping connections open to clients</h3>
+<pre style="background-color:#ffffff;">
+<span style="color:#718c00;">http {
+    keepalive_requests 320;  </span><span style="color:#999999;"># default 100
+    </span><span style="color:#718c00;">keepalive_timeout 300s;  </span><span style="color:#999999;"># default 75
+    </span><span style="color:#f5871f;">...</span><span style="color:#4d4d4c;">
+}
+</span></pre><h3 id="keeping-connections-open-upstream">Keeping connections open upstream</h3>
+<pre style="background-color:#ffffff;">
+<span style="color:#718c00;">proxy_http_version 1.1;
+proxy_set_header Connection &quot;&quot;;
+
+upstream backend {
+    server 10.0.0.1;
+    server 10.0.0.2;
+    
+    keepalive 32;</span><span style="color:#4d4d4c;">
+}
+</span></pre><h3 id="buffering-responses">Buffering responses</h3>
+<pre style="background-color:#ffffff;">
+<span style="color:#718c00;">server {
+    proxy_buffering on;
+    proxy_buffer_size 8k;
+    proxy_buffers 8 32;
+    proxy_busy_buffer_size 64k;
+    </span><span style="color:#f5871f;">...</span><span style="color:#4d4d4c;">
+}
+</span></pre><h3 id="buffering-access-log">Buffering access log</h3>
+<pre style="background-color:#ffffff;">
+<span style="color:#718c00;">http {
+    access_log /var/log/nginx/access.log main buffer=32k flush=1m;  </span><span style="color:#999999;"># flush the log older than 1 minute
+</span><span style="color:#4d4d4c;">}
+</span></pre><h3 id="os-tuning">OS tuning</h3>
+<ul>
+<li>connection number: <code>net.core.osmaxconn</code></li>
+<li>open file descriptors: <code>sys.fs.file_max</code>, <code>worker_connections</code>, <code>worker_rlimit_nofile</code></li>
+<li>enable more ephemeral ports: <code>net.ipv4.ip_local_port_range</code></li>
+</ul>
+
+    </div>
+
+    <div class="post-before-footer">
+        
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License"
+        style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a><br />This work is
+licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons
+    Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+
+    </div>
+
+    <div class="post-footer">
+        
+            
+            <div class="post-nav">
+                
+                <a class="previous" href="https:&#x2F;&#x2F;kemingy.github.io&#x2F;blogs&#x2F;minimalist&#x2F;">‹ 极简流浪生活</a>
+                
+                
+                <a class="next" href="https:&#x2F;&#x2F;kemingy.github.io&#x2F;blogs&#x2F;apispec&#x2F;">写了两个 Python service API doc&amp;verify 工具 ›</a>
+                
+                
+                
+            </div>
+            
+        
+    </div>
+</article>
+
+            </div>
+        </main>
+
+        
+        
+    </div>
+
+    
+    <script src="https:&#x2F;&#x2F;kemingy.github.io&#x2F;script.js"></script>
+    
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Cyanide</title>
+        <link>https://kemingy.github.io</link>
+        <description></description>
+        <generator>Zola</generator>
+        <language>en</language>
+        <atom:link href="https://kemingy.github.io/categories/daily/rss.xml" rel="self" type="application/rss+xml"/>
+        <lastBuildDate>Sat, 27 Jan 2018 00:00:00 +0000</lastBuildDate>
+        
+            <item>
+                <title>面具</title>
+                <pubDate>Sat, 27 Jan 2018 00:00:00 +0000</pubDate>
+                <link>https://kemingy.github.io/blogs/mian-ju/</link>
+                <guid>https://kemingy.github.io/blogs/mian-ju/</guid>
+                <description>&lt;blockquote&gt;
+&lt;p&gt;面具戴太久，就会长到脸上，再想揭下来，除非伤筋动骨扒皮。		——鲁迅&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;这里的面具虽然指的不是游坦之的面具，不过这确实是个很符合上面这句话意思的例子。游坦之的面具是阿紫给他的枷锁，即使他后来忍痛揭下来，还会有无形的枷锁和满脸的伤疤。&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>GitHub 骗星星指南</title>
+                <pubDate>Wed, 10 Jan 2018 00:00:00 +0000</pubDate>
+                <link>https://kemingy.github.io/blogs/github-pian-xing-xing-zhi-nan/</link>
+                <guid>https://kemingy.github.io/blogs/github-pian-xing-xing-zhi-nan/</guid>
+                <description>&lt;p&gt;Star 对 GitHuber 来说还是很重要的，以至于淘宝都有代刷的业务了，就是不知道有没有发生过刷太多上了 Trending 的。&lt;&#x2F;p&gt;
+&lt;p&gt;找人代刷毕竟太 low 了，我们还是要走别的路线，这样显得好像也是个正规军。&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+            <item>
+                <title>通向财富自由之路</title>
+                <pubDate>Tue, 09 Jan 2018 00:00:00 +0000</pubDate>
+                <link>https://kemingy.github.io/blogs/tong-xiang-cai-fu-zi-you-zhi-lu/</link>
+                <guid>https://kemingy.github.io/blogs/tong-xiang-cai-fu-zi-you-zhi-lu/</guid>
+                <description>&lt;blockquote&gt;
+&lt;p&gt;我们活着是为了什么？&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;这个哲学问题太难了，换个简单一点的。&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;怎么活着比较爽啊？&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+</description>
+            </item>
+        
+    </channel>
+</rss>

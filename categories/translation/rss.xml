@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Cyanide</title>
+        <link>https://kemingy.github.io</link>
+        <description></description>
+        <generator>Zola</generator>
+        <language>en</language>
+        <atom:link href="https://kemingy.github.io/categories/translation/rss.xml" rel="self" type="application/rss+xml"/>
+        <lastBuildDate>Mon, 16 May 2016 00:00:00 +0000</lastBuildDate>
+        
+            <item>
+                <title>变量命名规则</title>
+                <pubDate>Mon, 16 May 2016 00:00:00 +0000</pubDate>
+                <link>https://kemingy.github.io/blogs/variable-name/</link>
+                <guid>https://kemingy.github.io/blogs/variable-name/</guid>
+                <description>&lt;p&gt;原文：&lt;a href=&quot;http:&#x2F;&#x2F;a-nickels-worth.blogspot.com&#x2F;2016&#x2F;04&#x2F;a-guide-to-naming-variables.html?utm_source=wanqu.co&amp;amp;utm_campaign=Wanqu+Daily&amp;amp;utm_medium=email&quot;&gt;Variable name&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;本文翻译了该文章的大致意思，省略了代码示例。&lt;&#x2F;p&gt;
+</description>
+            </item>
+        
+    </channel>
+</rss>
